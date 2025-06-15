@@ -190,7 +190,7 @@ async function main() {
 
     document.getElementById("timezone").innerText = `Timezone: ${fingerprint.timezone} (${await hashString(fingerprint.timezone)})`;
     document.getElementById("language").innerText = `Language: ${fingerprint.language} (${await hashString(fingerprint.language)})`;
-    document.getElementById("resolution").innerText = `Language: ${fingerprint.screenResolution} (${await hashString(fingerprint.screenResolution)})`;
+    document.getElementById("resolution").innerText = `Resolution: ${fingerprint.screenResolution} (${await hashString(fingerprint.screenResolution)})`;
     document.getElementById("platform").innerText = `Platform: ${fingerprint.platform} (${await hashString(fingerprint.platform)})`;
 
     document.getElementById("canvas").innerText = `Canvas Hash: ${await hashString(fingerprint.canvas)}`;
